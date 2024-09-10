@@ -1,0 +1,14 @@
+<lib-main-layout>
+  <div class="container">
+    <h1>Precio total: {{totalPrice$ | async}}</h1>
+    <h1>Items totales: {{totalItems$ | async}}</h1>
+
+    <ul>
+      @if(items$ | async; as items) {
+        @for(item of items; track item.id) {
+          <li>[{{ item.cant }}] -> {{ item.title }}</li>
+        }
+      }
+    </ul>
+  </div>
+</lib-main-layout>

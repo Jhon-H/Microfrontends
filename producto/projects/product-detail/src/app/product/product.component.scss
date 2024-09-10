@@ -1,0 +1,43 @@
+.container {
+  max-width: max(900px, 90%);
+  margin: 20px auto;
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  column-gap: 30px;
+  border: 3px #273036 dashed;
+  border-radius: 4px;
+
+  &__image {
+    max-width: 400px;
+    height: 100%;
+    aspect-ratio: 5 / 3;
+    border-radius: 4px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    &__title {
+      font-size: 1rem;
+      color: lighten(#273036, 10%);
+    }
+
+    &__btn {
+      background-color: lighten(#273036, 10%);
+      padding: 5px;
+      border-radius: 4px;
+      color: whitesmoke;
+      border: none;
+      cursor: pointer;
+      height: 30px;
+      max-width: 250px;
+    }
+  }
+}

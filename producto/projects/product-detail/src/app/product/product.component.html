@@ -1,0 +1,20 @@
+<lib-main-layout>
+  <main class="container">
+    <section class="product">
+      @if(product() !== null) {
+        <img class="product__image" [src]="product()!.image" alt="" />
+
+        <section class="product__info">
+          <h1 class="product__info__title">{{ product()!.title }}</h1>
+          <span class="product__info__price">{{ product()!.price }}</span>
+
+          <button class="product__info__btn" (click)="addProduct()">
+            Agregar al carrito
+          </button>
+        </section>
+      } @else {
+        <p>Ops! Error en el producto</p>
+      }
+    </section>
+  </main>
+</lib-main-layout>

@@ -1,0 +1,11 @@
+@import "../../variables.scss";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: $footer-height;
+  background-color: rgb(238, 238, 238);
+}

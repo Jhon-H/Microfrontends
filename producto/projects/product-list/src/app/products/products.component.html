@@ -1,0 +1,20 @@
+<lib-main-layout>
+  <main class="container">
+    @for (product of products(); track product.id) {
+    <div class="product-card">
+      <a [routerLink]="['/product/' + product.id]">
+        <img [src]="product.image" width="200" height="160" alt="" />
+      </a>
+
+      <div class="product-card__info">
+        <span>${{ product.price }}</span>
+        <h2>{{ product.title }}</h2>
+
+        <span class="product-card__spacer"></span>
+
+        <button (click)="addProduct(product)">Add to cart</button>
+      </div>
+    </div>
+    }
+  </main>
+</lib-main-layout>

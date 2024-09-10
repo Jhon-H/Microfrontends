@@ -1,0 +1,51 @@
+.container {
+  max-width: max(900px, 90%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  gap: 20px;
+  padding: 40px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+  background-color: rgb(239, 239, 239);
+  border-radius: 8px;
+  padding: 8px;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    flex: 1;
+  }
+
+  &__spacer {
+    flex: 1;
+  }
+
+  h2 {
+    font-size: 1rem;
+    color: lighten(#273036, 10%);
+  }
+
+  img {
+    width: 100%;
+    aspect-ratio: 5 / 3;
+    height: 100%;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+
+  button {
+    background-color: lighten(#273036, 10%);
+    padding: 5px;
+    border-radius: 4px;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+  }
+}

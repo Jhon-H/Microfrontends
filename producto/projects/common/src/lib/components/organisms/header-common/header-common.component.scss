@@ -1,0 +1,35 @@
+@import "../../variables.scss";
+
+.header {
+  background-color: #273036;
+  height: $header-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    flex: 1;
+  }
+
+  &__cart {
+    justify-self: flex-end;
+
+    &--loading {
+      color: white;
+    }
+  }
+
+  a {
+    color: whitesmoke;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

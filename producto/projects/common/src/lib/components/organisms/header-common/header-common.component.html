@@ -1,0 +1,14 @@
+<header class="header">
+  <div class="header__links">
+    <a [routerLink]="['/']">Home</a>
+    <a [routerLink]="['/products']">Catalogo</a>
+    <a [routerLink]="['/blog']">Blog</a>
+    <a [routerLink]="['/pagos']">Pagos</a>
+  </div>
+
+  @if(cartItems$ | async; as cartItems) {
+    <a [routerLink]="['/cart']" class="header__cart">🛒 {{ cartItems.total }}</a>
+  } @else {
+    <span class="header__cart--loading">🛒 ...</span>
+  }
+</header>

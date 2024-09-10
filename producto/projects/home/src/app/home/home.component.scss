@@ -1,0 +1,40 @@
+.home {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: 50px;
+  min-height: inherit;
+
+  &__title {
+    font-size: 2rem;
+    animation: pulse 700ms infinite;
+
+    @keyframes pulse {
+      0% {
+        transform: scale(0.9);
+      }
+      25% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      75% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(0.9);
+      }
+    }
+  }
+
+  &__button {
+    background-color: darken(#273036, 5%);
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}

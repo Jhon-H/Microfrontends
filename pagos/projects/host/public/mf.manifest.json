@@ -1,0 +1,5 @@
+{
+	"pluginA": "http://localhost:4201/remoteEntry.js",
+	"pluginB": "http://localhost:4202/remoteEntry.js",
+	"pluginC": "http://localhost:4203/remoteEntry.js"
+}
